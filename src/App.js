@@ -4,6 +4,7 @@ import axios from "axios";
 import styled from "styled-components";
 
 import { CONFIG } from "./config";
+import { VOICES } from "./lib/voices";
 import { mispell } from "./lib/mispell";
 import { randomGrab } from "./lib/randomGrab";
 import { useSpeech } from "./lib/useSpeech";
@@ -19,15 +20,6 @@ const Container = styled.div`
   font-size: 5rem;
   padding: 1em;
 `;
-
-const DEFAULT_VOICE = {
-  Gender: "Male",
-  Id: "Matthew",
-  LanguageCode: "en-US",
-  LanguageName: "US English",
-  Name: "Matthew",
-  SupportedEngines: ["neural", "standard"]
-};
 
 const { message: INITIAL_MESSAGE } = parameters({
   message: "sorry"
@@ -53,8 +45,8 @@ const reducer = (state, action) => {
 
 function App() {
   const [{ voice, message }, dispatch] = useReducer(reducer, {
-    voices: [],
-    voice: DEFAULT_VOICE,
+    voices: VOICES,
+    voice: randomGrab({}, VOICES),
     message: mispell(INITIAL_MESSAGE)
   });
 
