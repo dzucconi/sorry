@@ -65,6 +65,10 @@ function App() {
       .then(({ data: voices }) => dispatch({ type: "READY", voices }));
   }, []);
 
+  useEffect(() => {
+    document.title = message;
+  }, [message]);
+
   return (
     <>
       {audio}
