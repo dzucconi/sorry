@@ -9,6 +9,7 @@ import { mispell } from "./lib/mispell";
 import { randomGrab } from "./lib/randomGrab";
 import { useSpeech } from "./lib/useSpeech";
 import { Message } from "./components/Message";
+import { Spinner } from "./components/Spinner";
 
 const Container = styled.div`
   width: 100%;
@@ -30,6 +31,7 @@ const reducer = (state, action) => {
     case "READY":
       return {
         ...state,
+        ready: true,
         voices: action.voices
       };
     case "NEXT":
@@ -44,7 +46,8 @@ const reducer = (state, action) => {
 };
 
 function App() {
-  const [{ voice, message }, dispatch] = useReducer(reducer, {
+  const [{ voice, message, ready }, dispatch] = useReducer(reducer, {
+    ready: false,
     voices: VOICES,
     voice: randomGrab({}, VOICES),
     message: mispell(INITIAL_MESSAGE)
@@ -72,6 +75,8 @@ function App() {
   return (
     <>
       {audio}
+
+      {!ready && <Spinner />}
 
       <Container>
         <Message>{message}</Message>
