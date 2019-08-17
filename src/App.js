@@ -10,6 +10,7 @@ import { randomGrab } from "./lib/randomGrab";
 import { useSpeech } from "./lib/useSpeech";
 import { Message } from "./components/Message";
 import { Spinner } from "./components/Spinner";
+import { Loading } from "./components/Loading";
 
 const Container = styled.div`
   width: 100%;
@@ -78,9 +79,11 @@ function App() {
 
       {!ready && <Spinner />}
 
-      <Container>
-        <Message>{message}</Message>
-      </Container>
+      <Loading ready={ready}>
+        <Container>
+          <Message>{message}</Message>
+        </Container>
+      </Loading>
     </>
   );
 }
