@@ -8111,10 +8111,10 @@ react-scripts@3.1.1:
   optionalDependencies:
     fsevents "2.0.7"
 
-react-use@10.7.0:
-  version "10.7.0"
-  resolved "https://registry.yarnpkg.com/react-use/-/react-use-10.7.0.tgz#1b6807f8c79e68cb20196b41ab674f559daf16f7"
-  integrity sha512-MJCDqC7KsDQTGh0RxKnc2VXV06RWrNFgVkg+Yy2+R+LUw5yGT9Q1mW2k9Oyy43VYPPEVLS4eH/oa8RxeNWY+UA==
+react-use@10.8.0:
+  version "10.8.0"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-10.8.0.tgz#fbe639eedfc69fc558e7965f16bdb85f25be9d65"
+  integrity sha512-vZmiYY+F8ZlI6trbZEca/sHhA9yMyl3Zm6eQXULnSVDQKLeDX8hmH53BelZUChdmJ3wQ8jL/cVxSrDfoMvCevQ==
   dependencies:
     "@types/react-wait" "^0.3.0"
     copy-to-clipboard "^3.1.0"
