@@ -1991,10 +1991,10 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-audiate@0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/audiate/-/audiate-0.1.2.tgz#98fe9758e714b96520a742685479aafaa1642470"
-  integrity sha512-pDroM1d0VsdB6EY1aV8wMp4P5xIabJ+IKk+T64oXBCBejmo8xIbiyth4qHVuFYJvW1lVqVfmvP+Z+zYYC72CiQ==
+audiate@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/audiate/-/audiate-1.0.0.tgz#d4017d25be074d9a51d82e67651def887f903526"
+  integrity sha512-5PPJ9mIurogCPRMW7j8AsDFtdh9vY6JqYUAGl7ip2p1d5rT0Aw4xafs2z6cuSVWR1O1Vfchrrxxkg+Krymozrg==
 
 autoprefixer@^9.6.1:
   version "9.6.1"
