@@ -9401,10 +9401,10 @@ react-scripts@3.3.0:
   optionalDependencies:
     fsevents "2.1.2"
 
-react-use@13.15.0:
-  version "13.15.0"
-  resolved "https://registry.yarnpkg.com/react-use/-/react-use-13.15.0.tgz#dd3e28e63b8c4c3b0e32de63172eea91550891cb"
-  integrity sha512-kxnj6EEnn/gtQbc2in9ov2Qd1ncaT3XaUiXjkD+ZKgOCc3mGYHkKqB7yFBuerCdXasS3Aez0W9PvI5tUUCDXOw==
+react-use@13.16.0:
+  version "13.16.0"
+  resolved "https://registry.yarnpkg.com/react-use/-/react-use-13.16.0.tgz#638ff41c8fd2917a89c693eb0e312ca5489a3fda"
+  integrity sha512-/MVaZdKE0xOXqU+6p+8XkSswfu+xrUrrXWgV8Hyoca21b4tudmLJ9BRQqO2gQpjcsnBiYKd1DzmYX6Re8bUY0A==
   dependencies:
     "@xobotyi/scrollbar-width" "1.5.0"
     copy-to-clipboard "^3.2.0"
