@@ -7,8 +7,8 @@
     "axios": "0.19.2",
     "knuth-shuffle": "1.0.8",
     "queryparams": "0.1.0",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-scripts": "3.4.0",
     "react-use": "13.27.0",
     "styled-components": "4.4.1"
