@@ -9,7 +9,7 @@
     "queryparams": "0.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "3.4.4",
     "react-use": "13.27.1",
     "styled-components": "4.4.1"
   },
