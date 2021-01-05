@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "audiate": "2.0.0",
-    "axios": "0.21.0",
+    "axios": "0.21.1",
     "knuth-shuffle": "1.0.8",
     "queryparams": "0.1.0",
     "react": "16.13.1",
