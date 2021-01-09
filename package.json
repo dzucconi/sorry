@@ -10,7 +10,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.4",
-    "react-use": "13.27.1",
+    "react-use": "15.3.8",
     "styled-components": "4.4.1"
   },
   "scripts": {
