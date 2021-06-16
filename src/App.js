@@ -1,8 +1,7 @@
 import React, { useEffect, useReducer } from "react";
-import parameters from "queryparams";
+import { configure } from "queryparams";
 import axios from "axios";
 import styled from "styled-components";
-
 import { CONFIG } from "./config";
 import { VOICES } from "./lib/voices";
 import { mispell } from "./lib/mispell";
@@ -19,12 +18,15 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 5rem;
+  font-size: 12vw;
+  line-height: 1;
   padding: 1em;
 `;
 
-const { message: INITIAL_MESSAGE } = parameters({
-  message: "sorry"
+const {
+  params: { message: INITIAL_MESSAGE },
+} = configure({
+  message: "sorry",
 });
 
 const reducer = (state, action) => {
@@ -33,13 +35,13 @@ const reducer = (state, action) => {
       return {
         ...state,
         ready: true,
-        voices: action.voices
+        voices: action.voices,
       };
     case "NEXT":
       return {
         ...state,
         voice: randomGrab(state.voice, state.voices),
-        message: mispell(state.message)
+        message: mispell(state.message),
       };
     default:
       throw new Error(`${action.type} is unimplemented`);
@@ -51,7 +53,7 @@ function App() {
     ready: false,
     voices: VOICES,
     voice: randomGrab({}, VOICES),
-    message: mispell(INITIAL_MESSAGE)
+    message: mispell(INITIAL_MESSAGE),
   });
 
   const [audio, state] = useSpeech({ input: INITIAL_MESSAGE, voice });
